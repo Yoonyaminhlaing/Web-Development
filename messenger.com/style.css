@@ -1,0 +1,168 @@
+.menu {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       height: 100px;
+       position: sticky;
+       top: 0;
+       border: 1px solid lightgray;
+       background-color: #fafafa;
+       opacity: 0.9;
+}
+
+.maincontainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 2000px;
+}
+    
+
+.logo {
+    width: 100%;
+    margin-right: 200px;
+}
+
+.logocontainer {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.small {
+    margin-bottom: 20px;
+}
+
+
+.left {
+    display: inline-block;
+    width: 50%;
+   
+  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.playstoreimage {
+    width : 50%;
+
+}
+
+.right {
+    display: inline-block ;
+    width: 50%;
+
+
+}
+
+.mobileimage {
+    width: 100%;
+}
+
+
+.footer {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px;
+    background-color: #fafafa;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.menuItem:hover {
+   border-bottom-style: solid;
+}
+
+.blockElement {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f6f6f6;
+    height: 35px;
+    width: 200px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+.signin {
+    background-color:#0084ff;
+    border-radius: 24px;
+    color: white;
+    padding: 2px 20px 0px;
+    font-size: 19px;
+    height: 40px;
+    width: 100px;
+}
+
+.InputSpan {
+    margin-bottom: 20px;
+}
+
+.password {
+    margin-bottom: 20px;
+}
+
+.mobilemenucontainer{
+    display: none;
+}
+
+@media (max-width:800px){
+    .menucontainer {
+        display: none;
+    }
+
+    .mobilemenucontainer {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .playstoreimage {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .right{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .mobileimage {
+        margin: 0 -50%;
+    }
+    @media (max-width: 375px) {
+        .playstoreimage {
+            width: 95%;
+        }
+
+        .footer{
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
